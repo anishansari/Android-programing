@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.firstdemoapp.eventHandling">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Bikash"
+        android:orderInCategory="100"
+        android:title="Bikash"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Sadam"
+        android:orderInCategory="100"
+        android:title="Sadam"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Chandan"
+        android:orderInCategory="100"
+        android:title="Chandan"
+        app:showAsAction="never" />
+</menu>
