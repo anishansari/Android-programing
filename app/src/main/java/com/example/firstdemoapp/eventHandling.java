@@ -34,6 +34,61 @@ public class eventHandling extends Activity {
         onKeyTest();
 
     }
+//onstart
+@Override
+protected  void onStart()
+{
+    super.onStart();
+    Log.d("Lifecycle Test","Activity Started");
+}
+
+//onResume
+    @Override
+    protected  void onResume()
+    {
+        super.onResume();
+        Log.d("Lifecycle Test","Activity Resumed");
+    }
+
+    @Override
+    protected  void onRestart()
+    {
+        super.onRestart();
+        Log.d("Lifecycle Test","Activity Restarted");
+    }
+
+    @Override
+    protected  void onPause()
+    {
+        super.onPause();
+        Log.d("Lifecycle Test","Activity Paused");
+    }
+    @Override
+    protected  void onStop()
+    {
+        super.onStop();
+        Log.d("Lifecycle Test","Activity Stopped");
+    }
+
+    @Override
+    protected  void onDestroy()
+    {
+        super.onDestroy();
+        Log.i("Lifecycle Test","Activity Destroyed");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public boolean onCreatePanelMenu(int featureId, @NonNull Menu menu) {
