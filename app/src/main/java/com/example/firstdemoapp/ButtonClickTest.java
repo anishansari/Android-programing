@@ -1,5 +1,6 @@
 package com.example.firstdemoapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.os.PersistableBundle;
@@ -15,5 +16,11 @@ public class ButtonClickTest  extends  Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.button_test);
+        Intent i=getIntent();
+        int id = i.getIntExtra("id", 0);
+        String name = i.getStringExtra("name");
+        String address = i.getStringExtra("Address");
+        TextView txt = findViewById(R.id.btnTextView);
+        txt.setText("id" + id+"\n"+"Name="+name+"\n"+"Address="+address);
     }
 }

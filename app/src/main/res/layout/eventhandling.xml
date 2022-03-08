@@ -9,27 +9,42 @@
         android:id="@+id/eventButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OnCLick" />
+        android:text="OnCLick"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/eventButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Long CLick" />
+        android:text="Long CLick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintVertical_bias="0.494" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="302dp" />
 
     <TextView
         android:id="@+id/eventEmail"
         android:layout_width="121dp"
         android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
         android:text="Touch me"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -43,9 +58,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/eventEmail"
         app:srcCompat="@drawable/ic_launcher"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="154dp" />
+        tools:layout_editor_absoluteX="122dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

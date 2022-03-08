@@ -122,10 +122,16 @@ protected  void onStart()
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                a = a + 1;
-                Log.i("Button", "I am Clicked");
+
+                Intent i = new Intent(eventHandling.this, ButtonClickTest.class);
+                i.putExtra("id",001);
+                i.putExtra("name","BCA NI");
+                i.putExtra("Address","Birgunj");
+                startActivity(i);
+//                a = a + 1;
+//                Log.i("Button", "I am Clicked");
 //                txt.setText("Hello I am clicked");
-                txt.setText(Integer.toString(a));
+//                txt.setText(Integer.toString(a));
 //                longclick();
             }
         });
