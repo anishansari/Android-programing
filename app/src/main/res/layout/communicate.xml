@@ -91,8 +91,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_below="@+id/radGroup"
-        android:entries="@array/planets_array"
         android:layout_toRightOf="@+id/txtProgram"
+        android:entries="@array/planets_array"
         tools:layout_editor_absoluteX="250dp"
         tools:layout_editor_absoluteY="0dp" />
 
