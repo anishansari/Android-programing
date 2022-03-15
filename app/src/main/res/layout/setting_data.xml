@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="5dp"
+        android:inputType="number"
+        android:id="@+id/editTextAnish"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAnish"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:id="@+id/editTextAnish2"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:text="Result"
+        android:textSize="20sp"
+       android:layout_below="@id/editTextAnish2"
+        android:id="@+id/textGender"
+        android:layout_marginLeft="10dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGender"
+        android:text="Calculate"
+        android:id="@+id/btnCalculator"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

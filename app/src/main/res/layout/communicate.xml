@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Student Form"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForm"
+        android:layout_margin="5dp"
+        android:hint="Enter Student Id"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtID"
+        android:layout_margin="5dp"
+        android:hint="Enter Student Name"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_margin="5dp"
+        android:text="Gender:"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:id="@+id/radGroup"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/txtGender" >
+
+        <RadioButton
+            android:id="@+id/radMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <RadioButton
+            android:id="@+id/radFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            app:layout_constraintBottom_toTopOf="@+id/txtProgram"
+            tools:layout_editor_absoluteX="193dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radGroup"
+        android:layout_margin="5dp"
+        android:text="Program"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <Spinner
+        android:id="@+id/spProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radGroup"
+        android:entries="@array/planets_array"
+        android:layout_toRightOf="@+id/txtProgram"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProgram"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="56dp"
+        android:text="Result"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        tools:layout_editor_absoluteX="143dp" />
+
+
+</RelativeLayout>
